@@ -1,0 +1,27 @@
+# Normalize line endings to LF in the repository on all platforms.
+# Git will still check out with CRLF on Windows if core.autocrlf=true,
+# but the stored copy is always LF — no more "LF will be replaced" warnings.
+
+* text=auto
+
+# Source files — always LF
+*.java    text eol=lf
+*.xml     text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.sql     text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.ts      text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.sh      text eol=lf
+
+# Binary files — no line ending conversion
+*.jar     binary
+*.war     binary
+*.class   binary
+*.png     binary
+*.jpg     binary
+*.gif     binary
